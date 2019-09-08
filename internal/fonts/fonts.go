@@ -73,10 +73,13 @@ func OpenFace(size string) (font.Face, error) {
 		return nil, err
 	}
 	buf, err := ioutil.ReadAll(f)
+	if err != nil {
+		return nil, err
+	}
 
 	ft, err := truetype.Parse(buf)
 	if err != nil {
-		panic(err)
+		return nil, err
 	}
 	face := truetype.NewFace(ft, &truetype.Options{Size: info.fontsize})
 	return face, nil
