@@ -29,6 +29,9 @@ jobs:
     steps:
       - checkout
       - run:
+          name: install statik
+          command: go get github.com/rakyll/statik
+      - run:
           name: run goreleaser
           command: curl -sL https://git.io/goreleaser | bash
 
