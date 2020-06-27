@@ -4,6 +4,7 @@ generate emoji (like :+1: in slack) banner which support some bitmap font faces
 
 [![Go Report Card](https://goreportcard.com/badge/github.com/kyoh86/gigamoji)](https://goreportcard.com/report/github.com/kyoh86/gigamoji)
 [![Coverage Status](https://img.shields.io/codecov/c/github/kyoh86/gigamoji.svg)](https://codecov.io/gh/kyoh86/gigamoji)
+[![Release](https://github.com/kyoh86/gigamoji/workflows/Release/badge.svg)](https://github.com/kyoh86/gigamoji/releases)
 
 ## Install
 
