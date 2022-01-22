@@ -7,7 +7,7 @@ brews:
 - install: |
     bin.install "gigamoji"
     man1.install "gigamoji.1"
-  github:
+  tap:
     owner: kyoh86
     name: homebrew-tap
   folder: Formula
