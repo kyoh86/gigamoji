@@ -18,17 +18,6 @@ builds:
     hooks:
       post:
         - make man VERSION={{.Version}} COMMIT={{.ShortCommit}} DATE={{.Date}}
-brews:
-  - install: |
-      bin.install "gigamoji"
-      man1.install Dir.glob('gigamoji*.1')
-    tap:
-      owner: kyoh86
-      name: homebrew-tap
-    folder: Formula
-    homepage: https://github.com/kyoh86/gigamoji
-    description: "generate emoji (like \U0001F44D in slack) banner which support some bitmap font faces"
-    license: MIT
 nfpms:
   - builds:
       - default
