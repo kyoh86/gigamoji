@@ -2,16 +2,17 @@ package fonts
 
 import (
 	"fmt"
+	"io"
+	"os"
+	"regexp"
+	"strconv"
+	"strings"
+
 	"github.com/golang/freetype/truetype"
 	_ "github.com/kyoh86/gigamoji/assets/assets"
 	"github.com/rakyll/statik/fs"
 	"golang.org/x/image/font"
 	"golang.org/x/image/math/fixed"
-	"io/ioutil"
-	"os"
-	"regexp"
-	"strconv"
-	"strings"
 )
 
 func init() {
@@ -52,8 +53,10 @@ type fontInfo struct {
 	fontsize float64
 }
 
-var fontMap = map[string]fontInfo{}
-var sizes = []string{}
+var (
+	fontMap = map[string]fontInfo{}
+	sizes   = []string{}
+)
 
 func SupportedSizes() []string {
 	return sizes
@@ -72,7 +75,7 @@ func OpenFace(size string) (font.Face, error) {
 	if err != nil {
 		return nil, err
 	}
-	buf, err := ioutil.ReadAll(f)
+	buf, err := io.ReadAll(f)
 	if err != nil {
 		return nil, err
 	}
