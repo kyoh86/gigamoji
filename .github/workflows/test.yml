@@ -55,7 +55,7 @@ jobs:
       - name: release (dry-run)
         uses: goreleaser/goreleaser-action@v3
         with:
-          args: release --rm-dist --skip-publish --snapshot
+          args: release --clean --skip-publish --snapshot
   cover:
     runs-on: ubuntu-latest
     needs: vendor
