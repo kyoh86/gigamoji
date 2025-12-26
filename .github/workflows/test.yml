@@ -53,7 +53,7 @@ jobs:
           name: repository
           path: .
       - name: release (dry-run)
-        uses: goreleaser/goreleaser-action@v3
+        uses: goreleaser/goreleaser-action@v6
         with:
           args: release --clean --skip-publish --snapshot
   cover:
