@@ -1,12 +1,12 @@
 module github.com/kyoh86/gigamoji
 
-go 1.24.0
+go 1.25.0
 
 require (
 	github.com/alecthomas/kingpin v2.2.6+incompatible
 	github.com/golang/freetype v0.0.0-20170609003504-e2365dfdc4a0
-	github.com/rakyll/statik v0.1.7
-	golang.org/x/image v0.34.0
+	github.com/rakyll/statik v0.1.8
+	golang.org/x/image v0.38.0
 )
 
 require (
