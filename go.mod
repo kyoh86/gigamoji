@@ -6,7 +6,7 @@ require (
 	github.com/alecthomas/kingpin v2.2.6+incompatible
 	github.com/golang/freetype v0.0.0-20170609003504-e2365dfdc4a0
 	github.com/rakyll/statik v0.1.8
-	golang.org/x/image v0.38.0
+	golang.org/x/image v0.44.0
 )
 
 require (
